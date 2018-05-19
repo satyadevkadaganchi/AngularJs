@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <body ng-app=""  ng-init="bgcolor = 'lightgreen' " >
+        <h3>AngularJs Task on Views </h3>
+        <br/>
+        Select Color:
+        <select ng-model="bgcolor" >
+            <option >DarkKhaki</option>
+            <option >CadetBlue</option>
+            <option >Cyan</option>
+            <option >DarkSalmon</option>
+        </select> 
+        <br/>
+        
+        <hr/>
+        <table border="2" style="background-color:{{bgcolor}}" >
+            <tr>
+                <th>Names</th>
+            </tr>
+            <tr>
+                <td>Ramu</td>
+            </tr>
+            <tr>
+                <td>Somu</td>
+            </tr>
+            <tr>
+                <td>Raju</td>
+            </tr>
+            <tr>
+                <td>RRR</td>
+            </tr>
+        </table>
+
+        <hr/>
+        <h3>Task two: Display images out of array</h3>
+        <div ng-init="ar = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg']">
+            <img src="{{item}}" width="200" height="200" ng-repeat="item in ar"/>
+        </div>
+
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>   
+    </body>
+
+</html>
